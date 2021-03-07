@@ -16,13 +16,12 @@ class Game {
 
         this.objects = [
             { x: 10, y: 210, width: 25, height: 44, color: 'red' },
-            { x: 143, y: 86, width: 130, height: 30, color: '#eee' },
+            { x: Math.random() * 1000, y: 86, width: 130, height: 30, color: '#eee' },
             { x: 622, y: 342, width: 41, height: 443, color: 'rgba(0, 255, 0, 0.4)' }
         ];
 
         this.handle_resize();
         this.setup_listeners();
-
     }
 
     draw () {
@@ -44,8 +43,6 @@ class Game {
             mouse.x = event.x;
             mouse.y = event.y;
         });
-
-        // Prevent the default mouse action with event.preventDefault()
         
         window.addEventListener('mousedown', event => {
 
@@ -66,10 +63,6 @@ class Game {
                 case 3: mouse.rmb = false; break;
             }
         });
-    }
-
-    handle_mouse () {
-
     }
 
     handle_resize () {
