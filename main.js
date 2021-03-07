@@ -68,6 +68,9 @@ class Game {
     handle_resize () {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
+        
+        // Canvas is cleared when size changes so redraw the objects
+        this.draw();
     }
 }
 
