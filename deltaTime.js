@@ -13,7 +13,7 @@ class DeltaTime extends Game {
     }
 
     loop (time) {
-        self.update(time - _time);
+        self.update(time - this._time);
 
         this._time = time;
         this._loop = window.requestAnimationFrame(this.loop);
