@@ -19,7 +19,6 @@ class DeltaTime extends Game {
         this._loop = window.requestAnimationFrame(time => this.loop(time));
     }
 
-
     start_loop () {
         this.running = true;
         this._loop = window.requestAnimationFrame(time => this.loop(time));
