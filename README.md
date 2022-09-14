@@ -1,3 +1,3 @@
 # Canvas-Template
 Basic template for canvas development
-https://samuel-uc.github.io/Canvas-Template/
+https://samuel-kw.github.io/Canvas-Template/
